@@ -8,11 +8,11 @@
 vsp Cargo.toml cargo.json
 
 # the f stands for `from` and t stands for `to`
-vsp Cargo.toml cargo.yaml -f json -t yaml
+vsp Cargo.toml cargo.yaml -f toml -t json # writes json output to cargo.yaml
 
 # vsp can also be piped if no input and output is provided
 # file formats need to be specified since they cannot be inferred.
-cat Cargo.toml | vsp -f toml -t yaml | cargo.yaml
+cat Cargo.toml | vsp -f toml -t yaml > cargo.yaml
 ```
 
 The current input options and their inferred extensions are:
