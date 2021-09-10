@@ -1,0 +1,27 @@
+[package]
+name = "vsp"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1"
+
+# serialization & deserialization
+serde_json = "1"
+serde_yaml = "0.8"
+serde_cbor = "0.11"
+ron = "0.6"
+toml = "0.5"
+bson = "2.0"
+
+# only serialization
+serde-pickle = "0.6"
+bincode = "1"
+postcard = { version = "0.7", features = [ "alloc" ] }
+flexbuffers = "2.0"
+
+structopt = "0.3"
+erased-serde = "0.3"
+
