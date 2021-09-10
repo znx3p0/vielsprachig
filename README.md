@@ -1,7 +1,6 @@
 # Vielsprachig | vsp
 
-### Command utility that translates file formats.
-
+## Command utility that translates file formats
 
 ```bash
 # transpiles Cargo.toml to json and writes it under cargo.json
@@ -17,6 +16,7 @@ cat Cargo.toml | vsp -f toml -t yaml | cargo.yaml
 ```
 
 The current input options and their inferred extensions are:
+
 - Json
   - .json
 - Yaml
@@ -31,6 +31,7 @@ The current input options and their inferred extensions are:
   - .bson or .bs
 
 The current output options are:
+
 - Pickle
   - .pickle or .pkl
 - Bincode
